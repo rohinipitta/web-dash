@@ -1,51 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Technix CRM</title>
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technix-CRM</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-content">
-      <h1 id="hero-text">Empower Your Business</h1>
-      <p class="subtext">A Smarter CRM to Boost Your Growth</p>
-      <div class="cta-buttons">
-        <button>Login</button>
-        <button>Book a Demo</button>
-        <button>Free Trial Now</button>
-      </div>
-    </div>
+  <header class="container">
+    <h1>Technix-CRM</h1>
+    <nav>
+      <button class="cta">Login</button>
+      <a href="#book-demo" class="cta">Book a Demo</a>
+
+      <button class="cta primary">Free Trial Now</button>
+    </nav>
   </header>
 
+  <section class="hero">
+    <h2 id="rotating-text">Manage Your Customers</h2>
+    <p>Empower your business with intelligent customer management.</p>
+  </section>
+
   <section class="features">
-    <h2>Product Features</h2>
-    <div class="feature-list">
-      <div class="feature">Lead Management</div>
-      <div class="feature">Sales Automation</div>
-      <div class="feature">Customer Support</div>
+    <h2>CRM Features</h2>
+    <div class="cards">
+      <div class="card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Analytics Dashboard</h3>
+        <p>Track all metrics and KPIs in one place.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-users"></i>
+        <h3>Contact Management</h3>
+        <p>Manage and segment your customer base efficiently.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-robot"></i>
+        <h3>Automation Tools</h3>
+        <p>Automate repetitive tasks and save time.</p>
+      </div>
     </div>
   </section>
 
-  <section class="use-cases">
-    <h2>Target Users</h2>
-    <p>Startups, Enterprises, SaaS Companies, Agencies</p>
+  <section class="audience">
+    <h2>Who Is It For?</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Sales Teams</h3>
+        <p>Convert leads faster and close more deals.</p>
+      </div>
+      <div class="card">
+        <h3>Marketing Agencies</h3>
+        <p>Track and optimize every campaign.</p>
+      </div>
+      <div class="card">
+        <h3>Support Teams</h3>
+        <p>Deliver better customer experiences.</p>
+      </div>
+    </div>
   </section>
 
-  <section class="demo-form">
-    <h2>Get a Demo</h2>
-    <form onsubmit="showSuccess(event)">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <button type="submit">Submit</button>
+
+  <section class="demo-form" id="book-demo">
+    <h2>Request a Demo</h2>
+    <form id="demoRequest">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Email Address" required />
+      <textarea id="message" placeholder="Your Message (Optional)"></textarea>
+      <button type="submit">Get a Demo</button>
+      <p id="formMessage"></p>
     </form>
   </section>
+  
+ <footer class="footer">
+        <div class="container">
+            <div class="footer-column">
+                <h4>Technix CRM</h4>
+                <p>&copy; 2023 All rights reserved</p>
+            </div>
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <p>sales@technixcrm.com</p>
+                <p>1-800-TECH-CRM</p>
+            </div>
+        </div>
+    </footer>
+ 
 
-  <footer>
-    <p>&copy; 2025 Technix CRM. All rights reserved.</p>
-    <p>Contact: support@technixcrm.com</p>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
+
